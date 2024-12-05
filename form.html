@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+div{
+padding: 10px 50px;
+font-size: 20px;
+cursor: pointer;
+border-radius: 5px;
+border:0;
+color: #fff ;
+background: #00668d;
+margin: 0 auto;
+display: block;
+padding: 20px;
+.form_box input[type=”submit”]:hover{ background: #000; }
+}
+
+    </style>
+</head>
+<body>
+    <div class= "container">
+       
+    <script>
+        function validateForm() {
+          let x = document.forms["myForm"]["fname"].value;
+          if (x == "") {
+            alert("Name must be filled out");
+            return false;
+          }
+        }
+        </script>
+        
+        <h2>Form Validation Script</h2>
+        
+        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+          Name: <input type="text" name="fname">
+          <input type="submit" value="Submit">
+        </form>
+        
+        <script>
+            function validateForm() {
+              let x = document.forms["myForm"]["ename"].value;
+              if (x == "") {
+                alert("Email must be filled out");
+                return false;
+              }
+            }
+            </script>
+            
+            <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+              Email: <input type="text" name="fname">
+              <input type="submit" value="Submit">
+            </form>
+
+            <script>
+                function validateForm() {
+                  let x = document.forms["myForm"]["fname"].value;
+                  if (x == "") {
+                    alert("Subject must be filled out");
+                    return false;
+                  }
+                }
+                </script>
+                
+                <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                  Subject: <input type="text" name="fname">
+                  <input type="submit" value="Submit">
+                </form>
+
+                <script>
+                    function validateForm() {
+                      let x = document.forms["myForm"]["mname"].value;
+                      if (x == "") {
+                        alert("Message must be filled out");
+                        return false;
+                      }
+                    }
+                    </script>
+                    
+                    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                      Message: <input type="text" name="mname">
+                      <input type="submit" value="Submit">
+                    </form>
+                </div>
+                <p>Go back to <a href="index.html">main page </a></p>
+      
+          <!-- Footer -->
+          <footer class="bg-dark text-white text-center py-4">
+            <p>&copy; Ashiraf's portfolio. All rights reserved.</p>
+            <p><b>Visit our website:</b><a href="index.html"> www.sjb-org.ac.ug</a></p>
+          
+        </footer>
+            </body>
+        </html>
